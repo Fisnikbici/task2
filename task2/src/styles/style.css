@@ -1,0 +1,132 @@
+
+.card img {
+    width: 20px; 
+    height: 20px; 
+  }
+
+
+
+.domain-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    padding: 20px;
+    justify-content: flex-start; 
+  }
+  
+  .card {
+    flex: 1 1 calc(33.333% - 40px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    background: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card-header {
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+    margin-bottom: 10px; 
+  }
+  
+  .tag {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .tag.new {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .tag.fix {
+    background-color:blue;
+    color: white;
+  }
+  
+  .tag.improvement {
+    background-color: purple;
+    color: white;
+  }
+  
+  h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .img {
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+  }
+  
+  .author {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  p {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 15px; 
+  }
+  
+  
+
+  .download-btn {
+    background: transparent;
+    color: #4A90E2; 
+    border: 2px solid #4A90E2; 
+    border-radius: 20px; 
+    padding: 8px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+    width: 130px;
+  }
+  
+  .download-btn:hover {
+    background: #4A90E2;
+    color: white;
+  }
+
+
+  /* Për ekranet më të vogla se 1024px (Tablet) */
+@media (max-width: 1024px) {
+    .card {
+      flex: 1 1 calc(50% - 40px); 
+    }
+  }
+  
+  /* Për ekranet më të vogla se 768px (Telefon) */
+  @media (max-width: 768px) {
+    .domain-list {
+      flex-direction: column; 
+      align-items: center; 
+    }
+  
+    .card {
+      flex: 1 1 100%; 
+      max-width: 90%; 
+    }
+  
+    .download-btn {
+      width: 100%; 
+      text-align: center; 
+      padding: 10px; 
+    }
+  }
+  
