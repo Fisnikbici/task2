@@ -145,9 +145,15 @@ p {
     max-width: 100%;
     padding: 20px;
     height: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    
   }
 
   .card-header {
+    
     flex-direction: column;
     text-align: center;
   }
@@ -164,6 +170,7 @@ p {
   }
 
   h3 {
+    
     font-size: 16px;
   }
 
@@ -177,5 +184,6 @@ p {
     padding: 12px;
   }
 }
+
 
 
