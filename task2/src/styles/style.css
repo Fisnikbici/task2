@@ -130,15 +130,51 @@ p {
     padding: 14px;
   }
 }
-
-/* Për ekranet më të vogla (telefonat) */
-@media (max-width: 768px) {
+/* Për ekranet e telefonave (nën 768px) */
+@media (max-width: 767px) {
   .domain-list {
-    grid-template-columns: repeat(1, 1fr); 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 10px;
   }
 
   .card {
+    width: 90%;
+    max-width: 100%;
+    padding: 20px;
     height: auto;
+  }
+
+  .card-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .tag {
+    min-width: auto;
+    padding: 6px 12px;
+    font-size: 10px;
+  }
+
+  .img {
+    width: 50px;
+    height: 50px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+
+  .download-btn {
+    width: 100%;
+    text-align: center;
+    padding: 12px;
   }
 }
 
