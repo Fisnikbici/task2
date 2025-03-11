@@ -1,13 +1,13 @@
-import React from "react";
-import DomainList from "./domainList";
-import "../styles/style.css";
+// import React from "react";
+// import DomainList from "./domainList";
+// import "../styles/style.css";
 
-const Task2 = () => {
-  return (
-    <div className="task-container">
-      <DomainList />
-    </div>
-  );
-};
+// const Task2 = () => {
+//   return (
+//     <div className="task-container">
+//       <DomainList />
+//     </div>
+//   );
+// };
 
-export default Task2;
+// export default Task2;

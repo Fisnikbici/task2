@@ -107,29 +107,39 @@ p {
   color: white;
 }
 
-/* Për ekranet e mesme (tableta) */
+/* Për ekranet e tabletave (768px - 1024px) */
 @media (max-width: 1024px) {
-  .card {
-    flex: 1 1 calc(50% - 20px); /* 2 në një rresht për tableta */
-    max-width: 320px;
-  }
-}
-
-/* Për ekranet e vogla (telefonat) */
-@media (max-width: 768px) {
   .domain-list {
-    flex-direction: column;
-    align-items: center; /* Qendërsojmë kartat */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 30px; 
+    justify-content: center;
   }
 
   .card {
-    flex: 1 1 100%; /* 1 në një rresht për telefonat */
-    max-width: 100%; /* Pak më e vogël për të mos zënë gjithë ekranin */
+    max-width: 100%;
+    height: 400px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   .download-btn {
-    width: 100%; /* Bëjmë butonin sa gjerësia e kartës */
+    width: 100%;
     text-align: center;
-    padding: 14px; 
+    padding: 14px;
   }
 }
+
+/* Për ekranet më të vogla (telefonat) */
+@media (max-width: 768px) {
+  .domain-list {
+    grid-template-columns: repeat(1, 1fr); 
+  }
+
+  .card {
+    height: auto;
+  }
+}
+
+
